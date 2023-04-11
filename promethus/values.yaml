@@ -1,2 +1,4 @@
 alertmanager:
-  enabled: false
+  enabled: true
+  alertmanagerSpec:
+    forceEnableClusterMode: true
