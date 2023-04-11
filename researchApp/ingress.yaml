@@ -3,6 +3,7 @@ kind: Ingress
 metadata:
   name: shiping-ingress
 spec:
+  ingressClassName: nginx
   rules:
   - host: review.research.local
     http:
