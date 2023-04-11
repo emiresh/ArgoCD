@@ -2,16 +2,16 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: testApp
+  name: ResearchAPP
   namespace: argocd
 spec:
   destination:
-    namespace: testApp
+    namespace: research
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: guestbook
-    repoURL: https://github.com/mabusaa/argocd-example-apps.git
+    path: researchApp
+    repoURL: https://github.com/emiresh/ArgoCD.git
     targetRevision: master
   syncPolicy:
     syncOptions:
