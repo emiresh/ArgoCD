@@ -1,2 +1,2 @@
 alertmanager:
-  enabled: false
+  enabled: true
