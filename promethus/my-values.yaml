@@ -1,1 +1,2 @@
-alertmanager.alertmanagerSpec.forceEnableClusterMode: true
+alertmanager:
+  enabled: false
