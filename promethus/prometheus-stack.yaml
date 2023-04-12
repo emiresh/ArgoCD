@@ -7,8 +7,8 @@ spec:
   project: default
   source:
     chart: kube-prometheus-stack
-    repoURL: https://github.com/prometheus-community/helm-charts/tree/main/charts
-    targetRevision: HEAD
+    repoURL: https://prometheus-community.github.io/helm-charts
+    targetRevision: 45.9.1
     helm:
     valueFiles:
     - my-values.yaml
