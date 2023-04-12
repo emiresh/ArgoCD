@@ -21,7 +21,7 @@ spec:
     automated:
       selfHeal: true
       prune: true
-    configManagement:
+  configManagement:
     name: prometheus-config
     namespace: monitoring
     plugin:
