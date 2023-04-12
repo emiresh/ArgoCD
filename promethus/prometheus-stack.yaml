@@ -11,8 +11,8 @@ spec:
     targetRevision: 45.9.0
     helm:
       parameters:
-      - name: alertmanager.alertmanagerSpec.forceEnableClusterMode.enabled
-      value: "true"
+      - name: alertmanager.alertmanagerSpec.forceEnableClusterMode
+        value: "true"
   destination:
     namespace: monitoring
     server: https://kubernetes.default.svc
