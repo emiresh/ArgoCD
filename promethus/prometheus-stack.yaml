@@ -12,6 +12,7 @@ spec:
     helm:
       valueFiles:
         - values.yaml
+        - my-values.yaml
   destination:
     namespace: monitoring
     server: https://kubernetes.default.svc

@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: my-values
+data:
+  alertmanager.yaml: |
+    global:
+      # Disable alertmanager
+      enabled: true
+      forceEnableClusterMode: true
