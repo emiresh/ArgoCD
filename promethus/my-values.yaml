@@ -3,8 +3,6 @@ kind: ConfigMap
 metadata:
   name: my-values
 data:
-  alertmanager.yaml: |
-    global:
-      # Disable alertmanager
-      enabled: true
-      forceEnableClusterMode: true
+  values.yaml: |
+    alertmanager:
+      enabled: false
