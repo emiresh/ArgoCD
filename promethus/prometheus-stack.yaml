@@ -10,9 +10,8 @@ spec:
     repoURL: https://prometheus-community.github.io/helm-charts  
     targetRevision: 45.9.0
     helm:
-      valueFiles:
-        - values.yaml
-        - my-values.yaml
+      values: 
+        - ./alertmanager-config.yaml
   destination:
     namespace: monitoring
     server: https://kubernetes.default.svc
@@ -22,3 +21,11 @@ spec:
     automated:
       selfHeal: true
       prune: true
+    configManagement:
+    name: prometheus-config
+    namespace: monitoring
+    plugin:
+      name: configmap
+      env:
+        - name: PROM_CONFIG_DIR
+          value: /etc/prometheus
