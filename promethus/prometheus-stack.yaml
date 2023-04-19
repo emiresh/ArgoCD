@@ -10,8 +10,9 @@ spec:
     repoURL: https://github.com/emiresh/helm-charts/tree/main/charts
     targetRevision: 45.9.1
     helm:
-      valueFiles:
-        - my-values.yaml
+      parameters:
+      - name: alertmanager.alertmanagerSpec.forceEnableClusterMode
+        value: "true"
   destination:
     namespace: monitoring
     server: https://kubernetes.default.svc
