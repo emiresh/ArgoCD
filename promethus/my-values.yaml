@@ -1,8 +1,2 @@
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: my-values
-data:
-  values.yaml: |
-    alertmanager:
-      enabled: false
+alertmanager:
+  enabled: false
