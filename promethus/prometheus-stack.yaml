@@ -11,10 +11,7 @@ spec:
     targetRevision: 45.9.1
     helm:
       valueFiles:
-        - configMapRef:
-            name: prometheus-stack-values
-            key: my-values.yaml
-            namespace: monitoring
+        - my-values.yaml
   destination:
     namespace: monitoring
     server: https://kubernetes.default.svc
